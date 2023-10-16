@@ -1,10 +1,33 @@
+import OpenAISanity from 'components/OpenAISanity/OpenAISanity'
 import NoaIgnite from 'lib/icons/NoaIgnite'
 import Head from 'next/head'
 import Image from 'next/image'
-import { useState } from 'react'
+import { JSXElementConstructor, ReactElement, useState } from 'react'
 import { FaIcicles } from 'react-icons/fa'
+import { FormPatch, InputProps, PatchEvent } from 'sanity'
 
 export default function Page() {
+  ;<div>
+    <OpenAISanity
+      onChange={function (patch: FormPatch | PatchEvent | FormPatch[]): void {
+        throw new Error('Function not implemented.')
+      }}
+      elementProps={undefined}
+      renderDefault={function (
+        props: InputProps
+      ): ReactElement<any, string | JSXElementConstructor<any>> {
+        throw new Error('Function not implemented.')
+      }}
+      id={''}
+      schemaType={undefined}
+      level={0}
+      path={[]}
+      presence={[]}
+      validation={[]}
+      value={''}
+      changed={false}
+    />
+  </div>
   const code = `
   // JavaScript code
   const response = await fetch('/api/openai', {

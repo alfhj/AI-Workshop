@@ -12,4 +12,9 @@
   h3 {
     @apply text-lg xl:text-3xl;
   }
+  .genImage {
+    float: right;
+    /*width: 100%;*/
+    margin: 20px;
+  }
 }
